@@ -9,12 +9,13 @@ function DashBoard() {
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
 
-  const API_KEY = "d832bf1f121bb3fe2fd2dc1a6e3b4523";
+  const API_KEY = "d832bf1f121bb3fe2fd2dc1a6e3b4523"; 
 
+  //Function : To fetch weather & city data from the api
   const fetchWeatherData = async () => {
     try {
       const response = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`, //API
       );
       setWeatherData(response.data);
       setError(null); // Clear any previous errors
@@ -25,7 +26,8 @@ function DashBoard() {
   };
 
   return (
-    <div className="App">
+    //Implementaion of UI
+    <div className="App"> 
       <h1>Weather DashBoard</h1>
       <input
         type="text"
