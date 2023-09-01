@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.GlobeContainer {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GlobeCanvas {
+    width: 60%;
+    height: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
